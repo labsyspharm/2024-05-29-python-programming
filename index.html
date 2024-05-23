@@ -419,28 +419,37 @@ The internal registration form is available through the HiTS mailing list or Sla
   <p>
     When you're writing code, it's nice to have a text editor that is
     optimized for writing code, with features like automatic
-    color-coding of key words.  The default text editor on Mac OS X and
-    Linux is usually set to Vim, which, although very powerful, is not the most
-    intuitive. If you accidentally find yourself stuck in it, hit
+    color-coding of key words.  The default text editor on Mac OS X, Linux
+    and Git Bash for Windows is usually set to Vim, which,
+    although very powerful, is not the most intuitive.
+    If you accidentally find yourself stuck in it, hit
     the  <kbd>Esc</kbd> key, followed by <kbd>:</kbd>+<kbd>q</kbd>+<kbd>!</kbd>
     (colon, lower-case 'q', exclamation mark), then hit <kbd>Return</kbd> to
     return to the shell.
   </p>
   <p>
-    <em>We are still working to establish a standard editor for this workshop. Please check back later.</em>
+    Pulsar is the free and open source text editor we have chosen to use for
+    this workshop. It is an intuitive code-focused text editor that we will
+    configure to run from the bash shell. You are welcome to use any editor
+    that you prefer, provided it has the same functionality.
   </p>
-
   <div>
     <ul class="nav nav-tabs nav-justified" role="tablist">
       <li role="presentation" class="active"><a data-os="windows" href="#editor-windows" aria-controls="Windows" role="tab" data-toggle="tab">Windows</a></li>
       <li role="presentation"><a data-os="macos" href="#editor-macos" aria-controls="MacOS" role="tab" data-toggle="tab">MacOS</a></li>
       <li role="presentation"><a data-os="linux" href="#editor-linux" aria-controls="Linux" role="tab" data-toggle="tab">Linux</a></li>
     </ul>
-
     <div class="tab-content">
       <article role="tabpanel" class="tab-pane active" id="editor-windows">
         <p>
-          <em>This section of the instructions is still being refined.</em>
+          Please download one of two executables to either install Pulsar
+          <a href="https://github.com/pulsar-edit/pulsar/releases/download/v1.117.0/Windows.Pulsar.Setup.1.117.0.exe">
+            as an application
+          </a>
+          or to run Pulsar directly
+          <a href="https://github.com/pulsar-edit/pulsar/releases/download/v1.117.0/Windows.Pulsar-1.117.0-win.zip">
+            from a portable executable
+          </a>.
         </p>
         <p>
           Some other editors that you can use are
@@ -450,7 +459,15 @@ The internal registration form is available through the HiTS mailing list or Sla
       </article>
       <article role="tabpanel" class="tab-pane active" id="editor-macos">
         <p>
-          <em>This section of the instructions is still being refined.</em>
+          Please download one of two DMG files to either install Pulsar
+          <a href="https://github.com/pulsar-edit/pulsar/releases/download/v1.117.0/Silicon.Mac.Pulsar-1.117.0-arm64.dmg">
+            for Apple Silicon (M1/M2) macs 
+          </a>
+          ( released from 2020 onwards ) or to install Pulsar
+          <a href="https://github.com/pulsar-edit/pulsar/releases/download/v1.117.0/Intel.Mac.Pulsar-1.117.0.dmg">
+            for older Intel macs 
+          </a>
+          ( released prior to 2020 ).
         </p>
         <p>
           Some other editors that you can use are
@@ -460,7 +477,9 @@ The internal registration form is available through the HiTS mailing list or Sla
       </article>
       <article role="tabpanel" class="tab-pane active" id="editor-linux">
         <p>
-          <em>This section of the instructions is still being refined.</em>
+          Please visit the
+          <a href="https://pulsar-edit.dev/download.html#regular-releases">Pulsar installation page</a>
+          for the various ways to install Pulsar on your Linux system.
         </p>
         <p>
           Other editors that you can use are
@@ -471,6 +490,12 @@ The internal registration form is available through the HiTS mailing list or Sla
       </article>
     </div>
   </div>
+  <p>
+    Launch Pulsar. From the "Pulsar" menu in the menu bar, select the
+    option to "Install Shell Commands". Provide your user credentials
+    if necessary. Now, the <code>pulsar</code> command will become
+    available to execute from the bash shell.
+  </p>
 </div> {% comment %} End of 'editor' section. {% endcomment %}
 
 <div id="python"> {% comment %} Start of 'Python' section. {% endcomment %}
